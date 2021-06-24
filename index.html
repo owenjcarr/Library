@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div id="top-container">
+        <div id="top-left">
+            <h1 id="top-header">Library</h1>
+        </div>
+        <div id="top-right">
+            <button id="add-book" onclick="openForm()">Add Book</button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="shelf-containter">
+            <table id="shelf">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="form-container">
+            <div id="form">
+                <h1>New Book</h1>
+
+                <label>Title</label>
+                <input type="text" id="title" placeholder="Enter Title">
+
+                <label>Author</label>
+                <input type="text" id="author" placeholder="Enter Author">
+
+                <label class>Pages</label>
+                <input type="text" id="pages" placeholder="Enter Page Number">
+
+                <label>Read</label>
+                <label class="switch">
+                    <input type="checkbox" id="read">
+                    <span class="slider round"></span>
+                </label>
+
+                <button id="form-btn" onclick="addBookToLibrary()">Add Book</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
