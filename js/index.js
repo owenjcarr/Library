@@ -1,18 +1,19 @@
+class Book {
+    constructor(title,author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+}
 
 let b1 = new Book('American Pastoral', 'Philip Roth', 423, false);
 let b2 = new Book('Dune', 'Frank Herbert', 497, false);
 
 let myLibrary = [
-    // b1,
+    b1,
     // b2
 ];
-
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-}
 
 const populateStorage = () => {
     localStorage.setItem('library', JSON.stringify(myLibrary));
